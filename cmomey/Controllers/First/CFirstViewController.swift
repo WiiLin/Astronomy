@@ -8,19 +8,17 @@
 import UIKit
 
 class CFirstViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: true)
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewWillAppear(_: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
-    @IBAction func onClickRequest(_ sender: Any) {
+    @IBAction func onClickRequest(_: Any) {
         navigationController?.pushViewController(CAstronomyListViewController(), animated: true)
     }
-
 }

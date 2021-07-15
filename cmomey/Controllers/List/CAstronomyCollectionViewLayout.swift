@@ -23,4 +23,5 @@ class CAstronomyCollectionViewLayout: UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
         configure()
-    }}
+    }
+}

@@ -8,7 +8,6 @@
 import UIKit
 
 class CNavigationController: UINavigationController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.lightGreen!]
@@ -18,5 +17,4 @@ class CNavigationController: UINavigationController {
         navigationBar.barStyle = .black
         navigationBar.isTranslucent = true
     }
-    
 }

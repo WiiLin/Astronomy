@@ -8,10 +8,7 @@
 import UIKit
 
 class CAstronomyDetailViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
 }

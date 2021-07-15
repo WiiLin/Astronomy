@@ -8,14 +8,13 @@
 import UIKit
 
 class CAstronomyListViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewWillAppear(_: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-
 }
