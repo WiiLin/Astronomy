@@ -19,12 +19,14 @@ class APIRequestHandler {
         }
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { data, _, error in
-            if let error = error {
-                completionHandler(.failure(.custom(error.localizedDescription)))
-            } else if let data = data {
-                self.parseHandler.parse(data, responseType: responseType, completionHandler: completionHandler)
-            } else {
-                completionHandler(.failure(.apiResponseSourceError))
+            DispatchQueue.main.async {
+                if let error = error {
+                    completionHandler(.failure(.custom(error.localizedDescription)))
+                } else if let data = data {
+                    self.parseHandler.parse(data, responseType: responseType, completionHandler: completionHandler)
+                } else {
+                        completionHandler(.failure(.apiResponseSourceError))
+                }
             }
         }
         task.resume()

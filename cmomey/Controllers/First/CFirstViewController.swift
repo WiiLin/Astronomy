@@ -8,6 +8,8 @@
 import UIKit
 
 class CFirstViewController: UIViewController {
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: true)
@@ -17,7 +19,10 @@ class CFirstViewController: UIViewController {
     override func viewWillAppear(_: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+}
 
+//MARK: - Private
+private extension CFirstViewController {
     @IBAction func onClickRequest(_: Any) {
         navigationController?.pushViewController(CAstronomyListViewController(), animated: true)
     }

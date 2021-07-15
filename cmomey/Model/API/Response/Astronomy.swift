@@ -12,7 +12,7 @@ struct Astronomy: Decodable {
     let title: String
     let url: URL
     let apodSite: URL
-    let date: Date
-    let media_type: String
-    let hdurl: URL
+    let date: String
+    let mediaType: String
+    let hdurl: String
 }

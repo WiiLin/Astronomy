@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2824112326A01917006D5383 /* Encodable+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824112226A01917006D5383 /* Encodable+Parameters.swift */; };
+		2824112526A01C7C006D5383 /* CAstronomyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824112426A01C7C006D5383 /* CAstronomyListViewModel.swift */; };
+		2824112826A05254006D5383 /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824112726A05254006D5383 /* ImageHandler.swift */; };
+		2824113026A07DFE006D5383 /* CAstronomyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824112E26A07DFE006D5383 /* CAstronomyDetailViewController.swift */; };
+		2824113126A07DFE006D5383 /* CAstronomyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2824112F26A07DFE006D5383 /* CAstronomyDetailViewController.xib */; };
+		2865735D26A089A8009F3BFF /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865735C26A089A8009F3BFF /* Cancellable.swift */; };
 		288C1DD4269D744C00D0C6A8 /* CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DD3269D744C00D0C6A8 /* CNavigationController.swift */; };
 		288C1DD7269D747D00D0C6A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DD6269D747D00D0C6A8 /* Colors.xcassets */; };
 		288C1DDA269D74AB00D0C6A8 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DD9269D74AB00D0C6A8 /* UIColor+Custom.swift */; };
@@ -15,8 +20,6 @@
 		288C1DDE269D756600D0C6A8 /* CFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DDC269D756600D0C6A8 /* CFirstViewController.xib */; };
 		288C1DE1269D979400D0C6A8 /* CAstronomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */; };
 		288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */; };
-		288C1DE6269D99A000D0C6A8 /* CAstronomyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */; };
-		288C1DE7269D99A000D0C6A8 /* CAstronomyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */; };
 		288C1DED269D9A8600D0C6A8 /* CAstronomyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DEB269D9A8600D0C6A8 /* CAstronomyCell.swift */; };
 		288C1DEE269D9A8600D0C6A8 /* CAstronomyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DEC269D9A8600D0C6A8 /* CAstronomyCell.xib */; };
 		288C1DF0269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */; };
@@ -61,6 +64,11 @@
 
 /* Begin PBXFileReference section */
 		2824112226A01917006D5383 /* Encodable+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Parameters.swift"; sourceTree = "<group>"; };
+		2824112426A01C7C006D5383 /* CAstronomyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyListViewModel.swift; sourceTree = "<group>"; };
+		2824112726A05254006D5383 /* ImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
+		2824112E26A07DFE006D5383 /* CAstronomyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyDetailViewController.swift; sourceTree = "<group>"; };
+		2824112F26A07DFE006D5383 /* CAstronomyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyDetailViewController.xib; sourceTree = "<group>"; };
+		2865735C26A089A8009F3BFF /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		288C1DD3269D744C00D0C6A8 /* CNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationController.swift; sourceTree = "<group>"; };
 		288C1DD6269D747D00D0C6A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		288C1DD9269D74AB00D0C6A8 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
@@ -68,8 +76,6 @@
 		288C1DDC269D756600D0C6A8 /* CFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CFirstViewController.xib; sourceTree = "<group>"; };
 		288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyListViewController.swift; sourceTree = "<group>"; };
 		288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyListViewController.xib; sourceTree = "<group>"; };
-		288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyDetailViewController.swift; sourceTree = "<group>"; };
-		288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyDetailViewController.xib; sourceTree = "<group>"; };
 		288C1DEB269D9A8600D0C6A8 /* CAstronomyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyCell.swift; sourceTree = "<group>"; };
 		288C1DEC269D9A8600D0C6A8 /* CAstronomyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyCell.xib; sourceTree = "<group>"; };
 		288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyCollectionViewLayout.swift; sourceTree = "<group>"; };
@@ -126,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2824112626A0522F006D5383 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2824112726A05254006D5383 /* ImageHandler.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		288C1DD2269D742800D0C6A8 /* UICompoments */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +185,7 @@
 				288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */,
 				288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */,
 				288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */,
+				2824112426A01C7C006D5383 /* CAstronomyListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -178,8 +193,8 @@
 		288C1DEA269D99C900D0C6A8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */,
-				288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */,
+				2824112E26A07DFE006D5383 /* CAstronomyDetailViewController.swift */,
+				2824112F26A07DFE006D5383 /* CAstronomyDetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -187,6 +202,7 @@
 		288C1E0C26A0139700D0C6A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2824112626A0522F006D5383 /* Image */,
 				288C1E0F26A0139700D0C6A8 /* API */,
 				288C1E1C26A0139700D0C6A8 /* Observable.swift */,
 			);
@@ -240,6 +256,7 @@
 			children = (
 				288C1E2B26A014AF00D0C6A8 /* APIRequestable.swift */,
 				288C1E2A26A014AF00D0C6A8 /* Requestable.swift */,
+				2865735C26A089A8009F3BFF /* Cancellable.swift */,
 			);
 			path = Procotol;
 			sourceTree = "<group>";
@@ -323,6 +340,8 @@
 			dependencies = (
 			);
 			name = cmomey;
+			packageProductDependencies = (
+			);
 			productName = cmomey;
 			productReference = 28F442E9269D71E200988B2D /* cmomey.app */;
 			productType = "com.apple.product-type.application";
@@ -395,6 +414,8 @@
 				Base,
 			);
 			mainGroup = 28F442E0269D71E200988B2D;
+			packageReferences = (
+			);
 			productRefGroup = 28F442EA269D71E200988B2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -414,8 +435,8 @@
 				28F442F6269D71E300988B2D /* Assets.xcassets in Resources */,
 				288C1E2326A0139700D0C6A8 /* astronomyList.json in Resources */,
 				288C1DEE269D9A8600D0C6A8 /* CAstronomyCell.xib in Resources */,
-				288C1DE7269D99A000D0C6A8 /* CAstronomyDetailViewController.xib in Resources */,
 				288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */,
+				2824113126A07DFE006D5383 /* CAstronomyDetailViewController.xib in Resources */,
 				288C1DDE269D756600D0C6A8 /* CFirstViewController.xib in Resources */,
 				288C1DD7269D747D00D0C6A8 /* Colors.xcassets in Resources */,
 				28F442F9269D71E300988B2D /* LaunchScreen.storyboard in Resources */,
@@ -451,13 +472,15 @@
 				288C1E2526A0139700D0C6A8 /* APIRequestHandler.swift in Sources */,
 				28F442ED269D71E200988B2D /* AppDelegate.swift in Sources */,
 				288C1E2026A0139700D0C6A8 /* Astronomy.swift in Sources */,
+				2865735D26A089A8009F3BFF /* Cancellable.swift in Sources */,
 				288C1E2226A0139700D0C6A8 /* AstronomyListRequest.swift in Sources */,
 				288C1DED269D9A8600D0C6A8 /* CAstronomyCell.swift in Sources */,
+				2824112826A05254006D5383 /* ImageHandler.swift in Sources */,
 				288C1DF0269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift in Sources */,
-				288C1DE6269D99A000D0C6A8 /* CAstronomyDetailViewController.swift in Sources */,
 				288C1DE1269D979400D0C6A8 /* CAstronomyListViewController.swift in Sources */,
 				288C1DDD269D756600D0C6A8 /* CFirstViewController.swift in Sources */,
 				288C1DD4269D744C00D0C6A8 /* CNavigationController.swift in Sources */,
+				2824112526A01C7C006D5383 /* CAstronomyListViewModel.swift in Sources */,
 				2824112326A01917006D5383 /* Encodable+Parameters.swift in Sources */,
 				288C1E2426A0139700D0C6A8 /* FakeAPIHandler.swift in Sources */,
 				288C1E0926A00FBD00D0C6A8 /* HTTPMethod.swift in Sources */,
@@ -465,6 +488,7 @@
 				288C1E3126A0166800D0C6A8 /* Parameters.swift in Sources */,
 				288C1E2D26A014AF00D0C6A8 /* Requestable.swift in Sources */,
 				288C1DDA269D74AB00D0C6A8 /* UIColor+Custom.swift in Sources */,
+				2824113026A07DFE006D5383 /* CAstronomyDetailViewController.swift in Sources */,
 				288C1E0B26A0123A00D0C6A8 /* URL+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,7 +657,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMAN347XG5;
 				INFOPLIST_FILE = cmomey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,6 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wii.cmomey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -651,7 +678,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMAN347XG5;
 				INFOPLIST_FILE = cmomey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,6 +688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wii.cmomey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

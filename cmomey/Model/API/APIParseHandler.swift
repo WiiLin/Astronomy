@@ -11,17 +11,6 @@ class APIParseHandler {
     private let jsonDecoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let dateFormatter = ISO8601DateFormatter()
-        dateFormatter.formatOptions = [.withInternetDateTime]
-        decoder.dateDecodingStrategy = .custom { (decoder) -> Date in
-            let container = try decoder.singleValueContainer()
-            let dateString = try container.decode(String.self)
-            if let date = dateFormatter.date(from: dateString) {
-                return date
-            } else {
-                throw DecodingError.dataCorruptedError(in: container, debugDescription: "")
-            }
-        }
         return decoder
     }()
 
@@ -33,6 +22,7 @@ class APIParseHandler {
                 let response = try jsonDecoder.decode(responseType, from: data)
                 completionHandler(.success(response))
             } catch {
+                print("\(error.localizedDescription)")
                 completionHandler(.failure(.custom((error as NSError).localizedDescription)))
             }
         } else {

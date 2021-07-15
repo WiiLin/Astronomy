@@ -8,6 +8,16 @@
 import UIKit
 
 class CAstronomyCollectionViewLayout: UICollectionViewFlowLayout {
+    
+    //MARK: - Override
+    override func prepare() {
+        super.prepare()
+        configure()
+    }
+}
+
+//MARK: - Private
+private extension CAstronomyCollectionViewLayout{
     func configure() {
         guard let collectionView = collectionView else { return }
         scrollDirection = .vertical
@@ -19,9 +29,5 @@ class CAstronomyCollectionViewLayout: UICollectionViewFlowLayout {
         let width = (collectionView.frame.width - totalPading - sectionInset.left - sectionInset.right) / column
         itemSize = CGSize(width: width, height: width)
     }
-
-    override func prepare() {
-        super.prepare()
-        configure()
-    }
 }
+
