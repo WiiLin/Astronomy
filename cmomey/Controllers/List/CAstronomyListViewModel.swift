@@ -12,22 +12,23 @@ protocol CAstronomyListViewModelDelegate: AnyObject {
 }
 
 class CAstronomyListViewModel {
-    
-    //MARK: - Properties
+    // MARK: - Properties
+
     private let apiRequestable: APIRequestable
     weak var delegate: CAstronomyListViewModelDelegate?
-    
+
     private(set) var dataSource: [Astronomy] = []
     @Observable private(set) var isLoading: Bool = false
     @Observable private(set) var errorMessage: String = ""
-    
-    //MARK: - Init
-    
+
+    // MARK: - Init
+
     init(apiRequestable: APIRequestable) {
         self.apiRequestable = apiRequestable
     }
-    
-    //MARK: - Interfice
+
+    // MARK: - Interfice
+
     func loadData() {
         apiRequestable.getAstronomyList { [weak self] result in
             guard let self = self else { return }

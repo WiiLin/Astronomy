@@ -202,8 +202,8 @@
 		288C1E0C26A0139700D0C6A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2824112626A0522F006D5383 /* Image */,
 				288C1E0F26A0139700D0C6A8 /* API */,
+				2824112626A0522F006D5383 /* Image */,
 				288C1E1C26A0139700D0C6A8 /* Observable.swift */,
 			);
 			path = Model;
@@ -255,8 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				288C1E2B26A014AF00D0C6A8 /* APIRequestable.swift */,
-				288C1E2A26A014AF00D0C6A8 /* Requestable.swift */,
 				2865735C26A089A8009F3BFF /* Cancellable.swift */,
+				288C1E2A26A014AF00D0C6A8 /* Requestable.swift */,
 			);
 			path = Procotol;
 			sourceTree = "<group>";
@@ -435,8 +435,8 @@
 				28F442F6269D71E300988B2D /* Assets.xcassets in Resources */,
 				288C1E2326A0139700D0C6A8 /* astronomyList.json in Resources */,
 				288C1DEE269D9A8600D0C6A8 /* CAstronomyCell.xib in Resources */,
-				288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */,
 				2824113126A07DFE006D5383 /* CAstronomyDetailViewController.xib in Resources */,
+				288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */,
 				288C1DDE269D756600D0C6A8 /* CFirstViewController.xib in Resources */,
 				288C1DD7269D747D00D0C6A8 /* Colors.xcassets in Resources */,
 				28F442F9269D71E300988B2D /* LaunchScreen.storyboard in Resources */,
@@ -472,23 +472,23 @@
 				288C1E2526A0139700D0C6A8 /* APIRequestHandler.swift in Sources */,
 				28F442ED269D71E200988B2D /* AppDelegate.swift in Sources */,
 				288C1E2026A0139700D0C6A8 /* Astronomy.swift in Sources */,
-				2865735D26A089A8009F3BFF /* Cancellable.swift in Sources */,
 				288C1E2226A0139700D0C6A8 /* AstronomyListRequest.swift in Sources */,
+				2865735D26A089A8009F3BFF /* Cancellable.swift in Sources */,
 				288C1DED269D9A8600D0C6A8 /* CAstronomyCell.swift in Sources */,
-				2824112826A05254006D5383 /* ImageHandler.swift in Sources */,
 				288C1DF0269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift in Sources */,
+				2824113026A07DFE006D5383 /* CAstronomyDetailViewController.swift in Sources */,
 				288C1DE1269D979400D0C6A8 /* CAstronomyListViewController.swift in Sources */,
+				2824112526A01C7C006D5383 /* CAstronomyListViewModel.swift in Sources */,
 				288C1DDD269D756600D0C6A8 /* CFirstViewController.swift in Sources */,
 				288C1DD4269D744C00D0C6A8 /* CNavigationController.swift in Sources */,
-				2824112526A01C7C006D5383 /* CAstronomyListViewModel.swift in Sources */,
 				2824112326A01917006D5383 /* Encodable+Parameters.swift in Sources */,
 				288C1E2426A0139700D0C6A8 /* FakeAPIHandler.swift in Sources */,
 				288C1E0926A00FBD00D0C6A8 /* HTTPMethod.swift in Sources */,
+				2824112826A05254006D5383 /* ImageHandler.swift in Sources */,
 				288C1E2826A0139700D0C6A8 /* Observable.swift in Sources */,
 				288C1E3126A0166800D0C6A8 /* Parameters.swift in Sources */,
 				288C1E2D26A014AF00D0C6A8 /* Requestable.swift in Sources */,
 				288C1DDA269D74AB00D0C6A8 /* UIColor+Custom.swift in Sources */,
-				2824113026A07DFE006D5383 /* CAstronomyDetailViewController.swift in Sources */,
 				288C1E0B26A0123A00D0C6A8 /* URL+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

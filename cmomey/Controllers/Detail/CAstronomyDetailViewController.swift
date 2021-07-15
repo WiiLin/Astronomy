@@ -8,43 +8,45 @@
 import UIKit
 
 class CAstronomyDetailViewController: UIViewController {
+    // MARK: - IBOutlet
 
-    //MARK: - IBOutlet
-    @IBOutlet private weak var dateLabel: UILabel!
-    @IBOutlet private weak var imageView: UIImageView!
-    @IBOutlet private weak var contentLabel: UILabel!
+    @IBOutlet private var dateLabel: UILabel!
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var contentLabel: UILabel!
     private var imageRequest: Cancellable?
-    
-    //MARK: - Properties
+
+    // MARK: - Properties
+
     private let astronomy: Astronomy
-    
-    //MARK: - Life Cycle
+
+    // MARK: - Life Cycle
+
     init(astronomy: Astronomy) {
         self.astronomy = astronomy
         super.init(nibName: nil, bundle: nil)
     }
-    
-    required init?(coder: NSCoder) {
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubviews()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         imageRequest?.cancel()
     }
-
 }
 
-//MARK: - Private
+// MARK: - Private
+
 private extension CAstronomyDetailViewController {
     func setupSubviews() {
         dateLabel.text = astronomy.date
-        contentLabel.text = [astronomy.title,astronomy.copyright, astronomy.description].joined(separator: "\n\n")
+        contentLabel.text = [astronomy.title, astronomy.copyright, astronomy.description].joined(separator: "\n\n")
         if let url = URL(string: astronomy.hdurl) {
             imageRequest = ImageHandler.shared.getImage(with: url) { [weak self] result in
                 guard let self = self else { return }

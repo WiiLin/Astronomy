@@ -10,15 +10,18 @@ import UIKit
 typealias ImageCompletionHandler = (Result<UIImage, APIError>) -> Void
 
 class ImageHandler {
-    //MARK: - Properties
+    // MARK: - Properties
+
     static let shared = ImageHandler()
     private let imageCache = NSCache<NSString, UIImage>()
-    
-    //MARK: - Init
+
+    // MARK: - Init
+
     private init() {}
-    
-    //MARK: - Interfice
-    func getImage(with url: URL, completionHandler: ImageCompletionHandler?)-> Cancellable? {
+
+    // MARK: - Interfice
+
+    func getImage(with url: URL, completionHandler: ImageCompletionHandler?) -> Cancellable? {
         let key: NSString = url.absoluteString as NSString
         if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
             completionHandler?(.success(cachedImage))
@@ -41,6 +44,4 @@ class ImageHandler {
             return dataTask
         }
     }
-    
-    
 }

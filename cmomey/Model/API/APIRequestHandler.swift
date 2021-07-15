@@ -25,7 +25,7 @@ class APIRequestHandler {
                 } else if let data = data {
                     self.parseHandler.parse(data, responseType: responseType, completionHandler: completionHandler)
                 } else {
-                        completionHandler(.failure(.apiResponseSourceError))
+                    completionHandler(.failure(.apiResponseSourceError))
                 }
             }
         }

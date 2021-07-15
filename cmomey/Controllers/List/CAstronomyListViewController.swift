@@ -8,12 +8,16 @@
 import UIKit
 
 class CAstronomyListViewController: UIViewController {
-    //MARK: - IBOutlet
+    // MARK: - IBOutlet
+
     @IBOutlet private var collectionView: UICollectionView!
-    //MARK: - Properties
+
+    // MARK: - Properties
+
     private lazy var viewModel: CAstronomyListViewModel = CAstronomyListViewModel(apiRequestable: APIHandler())
-    
-    //MARK: - Life Cycle
+
+    // MARK: - Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubViews()
@@ -26,19 +30,20 @@ class CAstronomyListViewController: UIViewController {
     }
 }
 
-// MARK: - Privaite 
+// MARK: - Privaite
 
 private extension CAstronomyListViewController {
     func setupSubViews() {
         collectionView.register(UINib(nibName: "\(CAstronomyCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(CAstronomyCell.self)")
     }
+
     func initBinding() {
         viewModel.delegate = self
-        viewModel.$errorMessage(bind: self) { weakSelf, errorMessage in
+        viewModel.$errorMessage(bind: self) { _, errorMessage in
             print(errorMessage)
         }
 
-        viewModel.$isLoading(bind: self) { weakSelf, isLoading in
+        viewModel.$isLoading(bind: self) { _, isLoading in
             print(isLoading)
         }
     }
@@ -50,12 +55,12 @@ extension CAstronomyListViewController: CAstronomyListViewModelDelegate {
     func loadCompleted() {
         collectionView.reloadData()
     }
-
 }
+
 // MARK: - UICollectionViewDelegate
 
 extension CAstronomyListViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         navigationController?.pushViewController(CAstronomyDetailViewController(astronomy: viewModel.dataSource[indexPath.row]), animated: true)
     }
 }
@@ -63,7 +68,7 @@ extension CAstronomyListViewController: UICollectionViewDelegate {
 // MARK: - UICollectionViewDataSource
 
 extension CAstronomyListViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         return viewModel.dataSource.count
     }
 
