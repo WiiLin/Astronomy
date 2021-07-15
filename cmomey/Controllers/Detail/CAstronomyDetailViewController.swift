@@ -45,7 +45,7 @@ class CAstronomyDetailViewController: UIViewController {
 
 private extension CAstronomyDetailViewController {
     func setupSubviews() {
-        dateLabel.text = astronomy.date
+        dateLabel.text = astronomy.displayDate
         contentLabel.text = [astronomy.title, astronomy.copyright, astronomy.description].joined(separator: "\n\n")
         if let url = URL(string: astronomy.hdurl) {
             imageRequest = ImageHandler.shared.getImage(with: url) { [weak self] result in

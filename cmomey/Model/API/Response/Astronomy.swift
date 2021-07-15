@@ -15,4 +15,12 @@ struct Astronomy: Decodable {
     let date: String
     let mediaType: String
     let hdurl: String
+
+    var displayDate: String {
+        if let date = date.date(with: "YYYY-MM-DD") {
+            return date.dateString(with: "YYYY MMM. dd")
+        } else {
+            return date
+        }
+    }
 }
