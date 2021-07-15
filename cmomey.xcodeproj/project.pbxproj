@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288C1DD4269D744C00D0C6A8 /* CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DD3269D744C00D0C6A8 /* CNavigationController.swift */; };
+		288C1DD7269D747D00D0C6A8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DD6269D747D00D0C6A8 /* Colors.xcassets */; };
+		288C1DDA269D74AB00D0C6A8 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DD9269D74AB00D0C6A8 /* UIColor+Custom.swift */; };
+		288C1DDD269D756600D0C6A8 /* CFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DDB269D756600D0C6A8 /* CFirstViewController.swift */; };
+		288C1DDE269D756600D0C6A8 /* CFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DDC269D756600D0C6A8 /* CFirstViewController.xib */; };
+		288C1DE1269D979400D0C6A8 /* CAstronomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */; };
+		288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */; };
+		288C1DE6269D99A000D0C6A8 /* CAstronomyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */; };
+		288C1DE7269D99A000D0C6A8 /* CAstronomyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */; };
+		288C1DED269D9A8600D0C6A8 /* CAstronomyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DEB269D9A8600D0C6A8 /* CAstronomyCell.swift */; };
+		288C1DEE269D9A8600D0C6A8 /* CAstronomyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288C1DEC269D9A8600D0C6A8 /* CAstronomyCell.xib */; };
+		288C1DF0269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */; };
 		28F442ED269D71E200988B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F442EC269D71E200988B2D /* AppDelegate.swift */; };
-		28F442EF269D71E200988B2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F442EE269D71E200988B2D /* SceneDelegate.swift */; };
-		28F442F1269D71E200988B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F442F0269D71E200988B2D /* ViewController.swift */; };
-		28F442F4269D71E200988B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F442F2269D71E200988B2D /* Main.storyboard */; };
 		28F442F6269D71E300988B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F442F5269D71E300988B2D /* Assets.xcassets */; };
 		28F442F9269D71E300988B2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F442F7269D71E300988B2D /* LaunchScreen.storyboard */; };
 		28F44304269D71E300988B2D /* cmomeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F44303269D71E300988B2D /* cmomeyTests.swift */; };
@@ -35,11 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		288C1DD3269D744C00D0C6A8 /* CNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationController.swift; sourceTree = "<group>"; };
+		288C1DD6269D747D00D0C6A8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		288C1DD9269D74AB00D0C6A8 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		288C1DDB269D756600D0C6A8 /* CFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFirstViewController.swift; sourceTree = "<group>"; };
+		288C1DDC269D756600D0C6A8 /* CFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CFirstViewController.xib; sourceTree = "<group>"; };
+		288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyListViewController.swift; sourceTree = "<group>"; };
+		288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyListViewController.xib; sourceTree = "<group>"; };
+		288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyDetailViewController.swift; sourceTree = "<group>"; };
+		288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyDetailViewController.xib; sourceTree = "<group>"; };
+		288C1DEB269D9A8600D0C6A8 /* CAstronomyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyCell.swift; sourceTree = "<group>"; };
+		288C1DEC269D9A8600D0C6A8 /* CAstronomyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAstronomyCell.xib; sourceTree = "<group>"; };
+		288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAstronomyCollectionViewLayout.swift; sourceTree = "<group>"; };
 		28F442E9269D71E200988B2D /* cmomey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cmomey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F442EC269D71E200988B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28F442EE269D71E200988B2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28F442F0269D71E200988B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28F442F3269D71E200988B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28F442F5269D71E300988B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F442F8269D71E300988B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28F442FA269D71E300988B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +94,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		288C1DD2269D742800D0C6A8 /* UICompoments */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DD3269D744C00D0C6A8 /* CNavigationController.swift */,
+			);
+			path = UICompoments;
+			sourceTree = "<group>";
+		};
+		288C1DD8269D749500D0C6A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DD9269D74AB00D0C6A8 /* UIColor+Custom.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		288C1DE3269D998700D0C6A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DEA269D99C900D0C6A8 /* Detail */,
+				288C1DE9269D99C000D0C6A8 /* List */,
+				288C1DE8269D99B600D0C6A8 /* First */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		288C1DE8269D99B600D0C6A8 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DDB269D756600D0C6A8 /* CFirstViewController.swift */,
+				288C1DDC269D756600D0C6A8 /* CFirstViewController.xib */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		288C1DE9269D99C000D0C6A8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DDF269D979400D0C6A8 /* CAstronomyListViewController.swift */,
+				288C1DE0269D979400D0C6A8 /* CAstronomyListViewController.xib */,
+				288C1DEB269D9A8600D0C6A8 /* CAstronomyCell.swift */,
+				288C1DEC269D9A8600D0C6A8 /* CAstronomyCell.xib */,
+				288C1DEF269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		288C1DEA269D99C900D0C6A8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				288C1DE4269D99A000D0C6A8 /* CAstronomyDetailViewController.swift */,
+				288C1DE5269D99A000D0C6A8 /* CAstronomyDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		28F442E0269D71E200988B2D = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +173,14 @@
 		28F442EB269D71E200988B2D /* cmomey */ = {
 			isa = PBXGroup;
 			children = (
+				288C1DE3269D998700D0C6A8 /* Controllers */,
+				288C1DD8269D749500D0C6A8 /* Extension */,
+				288C1DD2269D742800D0C6A8 /* UICompoments */,
 				28F442EC269D71E200988B2D /* AppDelegate.swift */,
-				28F442EE269D71E200988B2D /* SceneDelegate.swift */,
-				28F442F0269D71E200988B2D /* ViewController.swift */,
-				28F442F2269D71E200988B2D /* Main.storyboard */,
 				28F442F5269D71E300988B2D /* Assets.xcassets */,
 				28F442F7269D71E300988B2D /* LaunchScreen.storyboard */,
 				28F442FA269D71E300988B2D /* Info.plist */,
+				288C1DD6269D747D00D0C6A8 /* Colors.xcassets */,
 			);
 			path = cmomey;
 			sourceTree = "<group>";
@@ -190,6 +265,7 @@
 		28F442E1269D71E200988B2D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = C;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -231,9 +307,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288C1DE2269D979400D0C6A8 /* CAstronomyListViewController.xib in Resources */,
+				288C1DDE269D756600D0C6A8 /* CFirstViewController.xib in Resources */,
+				288C1DEE269D9A8600D0C6A8 /* CAstronomyCell.xib in Resources */,
 				28F442F9269D71E300988B2D /* LaunchScreen.storyboard in Resources */,
+				288C1DD7269D747D00D0C6A8 /* Colors.xcassets in Resources */,
+				288C1DE7269D99A000D0C6A8 /* CAstronomyDetailViewController.xib in Resources */,
 				28F442F6269D71E300988B2D /* Assets.xcassets in Resources */,
-				28F442F4269D71E200988B2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F442F1269D71E200988B2D /* ViewController.swift in Sources */,
+				288C1DD4269D744C00D0C6A8 /* CNavigationController.swift in Sources */,
+				288C1DDD269D756600D0C6A8 /* CFirstViewController.swift in Sources */,
+				288C1DED269D9A8600D0C6A8 /* CAstronomyCell.swift in Sources */,
+				288C1DF0269D9EA800D0C6A8 /* CAstronomyCollectionViewLayout.swift in Sources */,
+				288C1DE6269D99A000D0C6A8 /* CAstronomyDetailViewController.swift in Sources */,
+				288C1DE1269D979400D0C6A8 /* CAstronomyListViewController.swift in Sources */,
+				288C1DDA269D74AB00D0C6A8 /* UIColor+Custom.swift in Sources */,
 				28F442ED269D71E200988B2D /* AppDelegate.swift in Sources */,
-				28F442EF269D71E200988B2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28F442F2269D71E200988B2D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28F442F3269D71E200988B2D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28F442F7269D71E300988B2D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
