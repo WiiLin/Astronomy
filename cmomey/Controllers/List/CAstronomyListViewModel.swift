@@ -30,8 +30,10 @@ class CAstronomyListViewModel {
     // MARK: - Interfice
 
     func loadData() {
+        isLoading = true
         apiRequestable.getAstronomyList { [weak self] result in
             guard let self = self else { return }
+            self.isLoading = false
             switch result {
             case let .success(dataSource):
                 self.dataSource = dataSource
