@@ -16,7 +16,8 @@ class CFirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func viewWillAppear(_: Bool) {
+    override func viewWillAppear(_ aneimatd: Bool) {
+        super.viewWillAppear(aneimatd)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

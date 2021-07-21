@@ -25,7 +25,8 @@ class CAstronomyListViewController: UIViewController {
         viewModel.loadData()
     }
 
-    override func viewWillAppear(_: Bool) {
+    override func viewWillAppear(_ aneimatd: Bool) {
+        super.viewWillAppear(aneimatd)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
